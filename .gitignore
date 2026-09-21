@@ -1,0 +1,19 @@
+# dependencias
+/node_modules
+
+# builds
+/.next
+/out
+/build
+
+# logs
+*.log
+
+# entorno
+.env
+.env.*
+!.env.example
+
+# sistema
+.DS_Store
+*.pem

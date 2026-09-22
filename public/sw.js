@@ -1,10 +1,10 @@
-/* Guardian S.O.S — service worker mínimo y seguro.
+/* Escudo S.O.S — service worker mínimo y seguro.
  * Cachea la interfaz para abrir sin conexión (PWA instalable).
  * NUNCA cachea peticiones a ntfy.sh (alertas) ni POST.
- * v7.1: nombre de caché renovado para que las instalaciones PWA existentes
- * reciban la actualización de la app (licencias + consola del guardián).
+ * v7.6: caché renovada (marca Escudo S.O.S) para que las instalaciones
+ * PWA existentes reciban la landing actualizada.
  */
-const CACHE = "gsos-v71";
+const CACHE = "esos-v76";
 const SHELL = ["/", "/manifest.json", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (e) => {

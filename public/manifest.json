@@ -1,7 +1,7 @@
 {
-  "name": "Guardian S.O.S — Sistema de Alerta Personal",
-  "short_name": "Guardian S.O.S",
-  "description": "Alerta S.O.S a tu guardián con un enlace: sin que él instale nada. Palabra clave por voz, sirena disuasiva y tiempos de bienestar.",
+  "name": "Escudo S.O.S — Sistema de Alerta Personal",
+  "short_name": "Escudo S.O.S",
+  "description": "Alerta S.O.S a tu guardián con un enlace: sin que él instale nada. Palabra clave por voz, llamada y SMS automáticos, ubicación en vivo y tiempos de bienestar.",
   "id": "/",
   "start_url": "/?source=pwa",
   "scope": "/",

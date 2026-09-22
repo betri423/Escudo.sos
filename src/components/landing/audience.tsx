@@ -8,7 +8,7 @@ const AUDIENCES = [
   {
     icon: Baby,
     title: "Hijos",
-    text: "Sabes que llegaron bien de la escuela: el aviso de llegada te confirma cada destino sin llamarlos cada rato.",
+    text: "Van solos a la escuela y tú tranquilo: si gritan «ayuda», la alerta llega a toda la familia con su ubicación, aunque no tengan internet.",
   },
   {
     icon: HeartHandshake,

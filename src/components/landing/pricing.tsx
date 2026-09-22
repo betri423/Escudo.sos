@@ -40,7 +40,7 @@ export function Pricing() {
               <ul className="mt-6 space-y-3 text-sm text-slate-300">
                 {[
                   "Todas las funciones desbloqueadas",
-                  "Voz, ubicación, audio, foto, SMS y llamada",
+                  "Voz, palabra clave a tu elección, ubicación, audios en vivo, SMS y llamada",
                   `Hasta ${SITE.maxGuardians} guardianes configurables`,
                   "Sin tarjeta y sin permanencia",
                 ].map((item) => (

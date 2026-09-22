@@ -2,12 +2,12 @@
 
 import {
   AudioLines,
-  Camera,
-  MapPinned,
+  KeyRound,
   MapPin,
   Mic,
+  PhoneCall,
+  ShieldCheck,
   Users,
-  Volume2,
   WifiOff,
 } from "lucide-react";
 import { Reveal } from "./reveal";
@@ -18,12 +18,22 @@ const FEATURES = [
   {
     icon: Mic,
     title: "Activación por voz",
-    text: "Di «ayuda» y la alerta se dispara. Ideal cuando no puedes alcanzar el teléfono ni desbloquearlo.",
+    text: "Di «ayuda» en voz alta y la alerta se dispara. Ideal cuando no puedes alcanzar el teléfono ni desbloquearlo.",
+  },
+  {
+    icon: KeyRound,
+    title: "Palabra clave personalizable",
+    text: "Tú eliges la palabra secreta que la activa: «ayuda» o la que prefieras. Solo tú y los tuyos la conocen.",
   },
   {
     icon: WifiOff,
     title: "Funciona sin internet",
     text: "La llamada automática y los SMS van por la línea telefónica: sin datos, sin wifi, sin excusas.",
+  },
+  {
+    icon: PhoneCall,
+    title: "Llamada + SMS automáticos",
+    text: "Tu teléfono marca solo al primer guardián y envía un SMS con tu ubicación a todos los demás. Directo y sin Apps.",
   },
   {
     icon: MapPin,
@@ -32,28 +42,18 @@ const FEATURES = [
   },
   {
     icon: AudioLines,
-    title: "Audio en vivo",
-    text: "El micrófono se abre para que tus guardianes escuchen lo que está pasando a tu alrededor.",
-  },
-  {
-    icon: Camera,
-    title: "Foto del momento",
-    text: "Al activarse la alerta, el teléfono captura una foto del instante y la envía a tus guardianes.",
-  },
-  {
-    icon: MapPinned,
-    title: "Aviso de llegada",
-    text: "«Ya llegué bien»: tus contactos reciben un aviso cuando llegas a tu destino, sin llamarlos.",
+    title: "Manda audios en vivo",
+    text: "El micrófono se abre y a tus guardianes les llegan audios de lo que está pasando, en tiempo real.",
   },
   {
     icon: Users,
-    title: `Guardianes sin app (${SITE.maxGuardians})`,
-    text: "Hasta 5 contactos reciben llamada y SMS sin instalar nada; si quieren, abren un enlace y ven tu ubicación.",
+    title: `Tus guardianes no descargan NADA`,
+    text: `Hasta ${SITE.maxGuardians} contactos reciben la llamada y el SMS en su teléfono normal, sin instalar ninguna App. Quien quiera más, abre un enlace en su navegador.`,
   },
   {
-    icon: Volume2,
-    title: "Sirena disuasiva",
-    text: "Un sonido fuerte llama la atención de quien está cerca y desanima al agresor.",
+    icon: ShieldCheck,
+    title: "Vigila 24/7 en segundo plano",
+    text: "Corre siempre en segundo plano, escucha con la pantalla apagada y se reinicia sola al encender el teléfono.",
   },
 ];
 
@@ -85,9 +85,24 @@ export function Features() {
           ))}
         </div>
 
+        <Reveal delay={0.12} className="mt-12">
+          <div className="rounded-2xl border border-amber-400/25 bg-gradient-to-r from-amber-400/10 via-amber-400/[0.06] to-red-500/[0.06] p-6 sm:p-8">
+            <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-amber-300">
+              No existe otra igual
+            </p>
+            <p className="mx-auto mt-3 max-w-3xl text-center text-base leading-relaxed text-slate-300 sm:text-lg">
+              Detección <span className="font-semibold text-amber-300">por voz</span> · alerta{" "}
+              <span className="font-semibold text-amber-300">sin internet</span> · guardianes{" "}
+              <span className="font-semibold text-amber-300">sin instalar nada</span> · palabra clave{" "}
+              <span className="font-semibold text-amber-300">a tu elección</span> ·{" "}
+              <span className="font-semibold text-amber-300">audios en vivo</span> — todo en {SITE.apkSize}.
+            </p>
+          </div>
+        </Reveal>
+
         <Reveal delay={0.15}>
-          <p className="mt-10 text-center text-sm text-slate-500">
-            Además: se reinicia sola al encender el teléfono · corre en segundo plano ·{" "}
+          <p className="mt-8 text-center text-sm text-slate-500">
+            Sin Apps para tus guardianes · corre en segundo plano · se reinicia sola ·{" "}
             {SITE.apkSize} de descarga · verificación interna con 29 pruebas automatizadas.
           </p>
         </Reveal>

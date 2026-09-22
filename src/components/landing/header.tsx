@@ -20,7 +20,7 @@ export function Header() {
             <Shield className="h-5 w-5 text-[#1A1206]" strokeWidth={2.4} aria-hidden />
           </span>
           <span className="text-sm font-bold tracking-widest text-slate-100">
-            GUARDIÁN <span className="text-amber-400">S.O.S</span>
+            ESCUDO <span className="text-amber-400">S.O.S</span>
           </span>
         </a>
 

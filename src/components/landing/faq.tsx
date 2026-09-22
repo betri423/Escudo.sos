@@ -13,15 +13,19 @@ import { SITE } from "./site";
 const FAQS = [
   {
     q: "¿De verdad funciona sin internet?",
-    a: "Sí. El corazón de la alerta no depende de datos ni wifi: al activarse, tu teléfono marca automáticamente al primer guardián y envía un SMS con tu ubicación a todos tus contactos, usando la línea telefónica normal. Si además tienes internet, se suman el audio en vivo, la foto y la ubicación continua en el mapa.",
+    a: "Sí. El corazón de la alerta no depende de datos ni wifi: al activarse, tu teléfono marca automáticamente al primer guardián y envía un SMS con tu ubicación a todos tus contactos, usando la línea telefónica normal. Si además tienes internet, se suman los audios en vivo y tu ubicación continua en el mapa.",
   },
   {
     q: "¿Mis guardianes necesitan instalar la app?",
-    a: "No. Ellos reciben una llamada y mensajes normales en su teléfono, sin instalar nada. Si quieren ver tu ubicación en vivo, el audio y las fotos, basta con abrir el enlace del guardián en su navegador.",
+    a: "No. Ellos reciben una llamada y mensajes normales en su teléfono, sin instalar nada. Si quieren escuchar tus audios en vivo y ver tu ubicación en el mapa, basta con abrir el enlace del guardián en su navegador.",
   },
   {
     q: "¿Funciona con la pantalla bloqueada o el teléfono guardado?",
     a: "Sí. Escudo S.O.S corre en segundo plano las 24 horas y detecta la palabra «ayuda» incluso con la pantalla apagada y el teléfono en el bolsillo. También se reinicia sola cuando enciendes el teléfono.",
+  },
+  {
+    q: "¿Puedo cambiar la palabra que la activa?",
+    a: "Sí. La palabra clave es tuya: puedes dejar «ayuda» o cambiarla por la que tú elijas desde la propia app, para que sea discreta y solo la conozcan los tuyos. Además entiende variantes y acentos sin disparar falsas alertas.",
   },
   {
     q: "¿Cómo se activa la alerta exactamente?",
@@ -29,7 +33,7 @@ const FAQS = [
   },
   {
     q: "¿Qué recibe exactamente cada guardián?",
-    a: "El primer contacto de tu lista recibe una llamada automática de tu teléfono (con grabación de la llamada si la marcas), y todos reciben un SMS con tu ubicación. Por el canal de internet —si hay— reciben además audio en vivo, foto y tu posición en el mapa en tiempo real, con sirena de alarma en su equipo.",
+    a: "El primer contacto de tu lista recibe una llamada automática de tu teléfono: al contestar, escucha en vivo lo que pasa a tu alrededor. Todos reciben además un SMS con tu ubicación y, si hay internet, tus audios en vivo y tu posición en el mapa en tiempo real.",
   },
   {
     q: "¿Cuánto cuesta?",

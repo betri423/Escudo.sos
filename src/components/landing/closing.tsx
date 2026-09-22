@@ -67,7 +67,7 @@ export function Footer() {
           </span>
           <div>
             <p className="text-xs font-bold tracking-widest text-slate-200">
-              GUARDIÁN <span className="text-amber-400">S.O.S</span>
+              ESCUDO <span className="text-amber-400">S.O.S</span>
             </p>
             <p className="text-[11px] text-slate-500">Protección personal · {SITE.version}</p>
           </div>

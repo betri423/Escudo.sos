@@ -1,11 +1,11 @@
 /* Escudo S.O.S — service worker mínimo y seguro.
  * Cachea la interfaz para abrir sin conexión (PWA instalable).
  * NUNCA cachea peticiones a ntfy.sh (alertas) ni POST.
- * v7.6: caché renovada (marca Escudo S.O.S) para que las instalaciones
+ * v7.7: caché renovada + /app en el shell para que las instalaciones
  * PWA existentes reciban la landing actualizada.
  */
-const CACHE = "esos-v76";
-const SHELL = ["/", "/manifest.json", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png"];
+const CACHE = "esos-v77";
+const SHELL = ["/", "/app", "/manifest.json", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(

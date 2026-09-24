@@ -3,16 +3,23 @@
   "short_name": "Escudo S.O.S",
   "description": "Alerta S.O.S a tu guardián con un enlace: sin que él instale nada. Palabra clave por voz, llamada y SMS automáticos, ubicación en vivo y tiempos de bienestar.",
   "id": "/",
-  "start_url": "/?source=pwa",
+  "start_url": "/app?source=pwa",
   "scope": "/",
   "display": "standalone",
-  "display_override": ["standalone", "fullscreen"],
+  "display_override": [
+    "standalone",
+    "fullscreen"
+  ],
   "orientation": "portrait",
   "background_color": "#020617",
   "theme_color": "#020617",
   "lang": "es",
   "dir": "ltr",
-  "categories": ["security", "lifestyle", "utilities"],
+  "categories": [
+    "security",
+    "lifestyle",
+    "utilities"
+  ],
   "icons": [
     {
       "src": "/icon-192.png",

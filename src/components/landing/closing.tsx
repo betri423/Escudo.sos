@@ -72,10 +72,18 @@ export function Footer() {
             <p className="text-[11px] text-slate-500">Protección personal · {SITE.version}</p>
           </div>
         </div>
-        <p className="text-xs text-slate-500">
-          © {new Date().getFullYear()} Escudo S.O.S · Hecho en México · Uso responsable: esta app
-          es un apoyo, no un sustituto de los servicios de emergencia oficiales.
-        </p>
+        <div className="flex flex-col items-center gap-1.5 sm:items-end">
+          <a
+            href="/app"
+            className="text-xs font-medium text-amber-300/80 underline-offset-4 transition-colors hover:text-amber-300 hover:underline"
+          >
+            ¿Ya tienes licencia? Abre la app web →
+          </a>
+          <p className="text-xs text-slate-500">
+            © {new Date().getFullYear()} Escudo S.O.S · Hecho en México · Uso responsable: esta app
+            es un apoyo, no un sustituto de los servicios de emergencia oficiales.
+          </p>
+        </div>
       </div>
     </footer>
   );
